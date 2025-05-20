@@ -10,8 +10,10 @@ function setGrid(n){
             const newDiv =document.createElement('div');
             newDiv.classList.add('grids');
             gridContainer.appendChild(newDiv);
+            let opacity=0;
             newDiv.addEventListener('mouseover', function(){
-                newDiv.style.backgroundColor = "rgba(0, 0, 0, 1)";
+                opacity=opacity+0.1
+                newDiv.style.backgroundColor = `rgba(0, 0, 0,  ${opacity})`;
             });
         }
     }
