@@ -20,7 +20,6 @@ function setGrid(n){
 }
 
 
-
 document.getElementById('gridForm').addEventListener('submit',function(event){
     event.preventDefault();
     let value = document.getElementById('gridSize').value;
