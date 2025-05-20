@@ -10,6 +10,9 @@ function setGrid(n){
             const newDiv =document.createElement('div');
             newDiv.classList.add('grids');
             gridContainer.appendChild(newDiv);
+            newDiv.addEventListener('mouseover', function(){
+                newDiv.style.backgroundColor = "rgba(0, 0, 0, 1)";
+            });
         }
     }
 }
